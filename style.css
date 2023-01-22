@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(1, 31, 66);
+}
+.student-box{
+    overflow: auto;
+    background-color: rgb(12, 1, 32);
+}
+.student-box::-webkit-scrollbar{
+    width: 7px;
+    background-color: transparent;
+}
+.student-box::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 252, 251);
+    border-radius: 7px;
+}
+.student-data{
+    padding: 10px;
+    border: solid 1px rgba(0, 0, 0, 0.274);
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: rgb(5, 5, 5);
+}
+.student-data > input[type="text"]{
+    padding: 10px;
+    border: 0;
+    margin-inline-end: 20px;
+    outline: unset;
+    border-radius: 5px;
+}
+.student-data > input[type="submit"]{
+    padding: 10px;
+    border: solid 1px white;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.student-max{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6 , 1fr);
+    padding: 10px;
+    background-color: transparent;
+}
+.student-max >  div{
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(33, 0, 70);
+    color: white;
+}
+.student-max > div:nth-child(even){
+    background-color: rgb(0, 42, 71);
+}
